@@ -8,26 +8,24 @@
 module.exports = {
 
   attributes: {
+    store: {
+        model: 'Store'
+    },
   	name:{
   		type: 'string'
   	},
   	price: {
+  		type: 'float'
+  	},
+  	packSize: {
   		type: 'integer'
   	},
-  	pack_size: {
+  	lottoGameId: {
   		type: 'integer'
   	},
-  	lotto_serial: {
-  		type: 'integer'
-  	},
-  	reports: {
-  		collection: 'Report',
-  		via: 'games'
-  	},
-  	records: {
-  		collection: 'Record',
+  	packs: {
+  		collection: 'Pack',
   		via: 'game'
   	}
   }
 };
-

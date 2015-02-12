@@ -46,4 +46,6 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
   'get /report/list' : 'ReportController.list',
+  'post /report/new' : 'Report.new',
+  'post /report/'   : 'Report.new'
 };

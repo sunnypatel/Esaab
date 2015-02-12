@@ -11,19 +11,12 @@ module.exports = {
     title: {
       type: "string"
     },
-  	date: {
-  		type: "date"
+  	previousReportId: {
+  		model: "report"
   	},
-  	dailyPays: {
-  		type: "float"
-  	},
-  	dailyActivity: {
-  		type: "float"
-  	},
-  	games: {
-  		collection: 'Game',
-  		via: 'reports'
+  	records: {
+  		collection: 'Record',
+        via: 'report'
   	}
   }
 };
-
